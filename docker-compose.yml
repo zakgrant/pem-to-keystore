@@ -1,0 +1,12 @@
+version: '2.3'
+
+services:
+  pem-to-keystore:
+    build: .
+    environment:
+      - KEYSTORE_PASSWORD=P4ssw0rd
+      - KEYSTORE_ALIAS=example
+    volumes:
+      - ./example/example.crt:/src/tls.crt
+      - ./example/example.key:/src/tls.key
+      - ./:/out
