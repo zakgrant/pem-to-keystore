@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# TODO: validate required inputs - KEYSTORE_PASSWORD
+# validate required inputs - KEYSTORE_PASSWORD
 if [[ -z "${KEYSTORE_PASSWORD}" ]]
 then
     echo "You need to set the KEYSTORE_PASSWORD environment variable... aborting!"
